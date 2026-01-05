@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import time
-import backend as db  # Pastikan file backend.py berada di folder yang sama
 
 # ==============================================================================
 # 1. KONFIGURASI HALAMAN & CSS
@@ -11,6 +10,8 @@ st.set_page_config(
     page_icon="🔒",
     layout="wide"
 )
+
+import backend as db  # Pastikan file backend.py berada di folder yang sama
 
 # Inisialisasi session state
 if 'group_info' not in st.session_state:
